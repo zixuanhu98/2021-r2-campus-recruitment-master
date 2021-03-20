@@ -27,7 +27,7 @@ export const MembershipContainer = () => {
         setTimeout(function () {
             getMembership(grade).then(res => {
                 	console.log(grade,res);
-	                if (grade) res=res.filter(item=>item.grade===grade): 
+	                if (grade) res=res.filter(item=>item.grade===grade) 
                     setMembership(res);
             })
         }, 500);
